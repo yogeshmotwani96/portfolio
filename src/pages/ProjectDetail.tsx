@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronLeft } from 'lucide-react'
 import resume from '../data/resume.json'
+import webPortfolioImg from '../assets/webportfolio.jpg'
 
 export default function ProjectDetail() {
   const { slug } = useParams()
@@ -34,7 +35,9 @@ export default function ProjectDetail() {
         className="grid gap-6 md:grid-cols-2 items-start"
       >
         <div className="relative rounded-lg overflow-hidden border border-white/10 bg-white/5 min-h-[240px]">
-          {project.image ? (
+          {project.slug === 'web-dev-portfolio' ? (
+            <img src={webPortfolioImg} alt={project.title} className="w-full h-full object-cover" />
+          ) : project.image ? (
             <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
           ) : (
             <div className="aspect-video" />

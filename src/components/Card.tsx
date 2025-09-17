@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import logoLogin from '../assets/logo_login.webp'
 import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
 import accentureLogo from '../assets/Accenture-Symbol.png'
+import webPortfolioImg from '../assets/webportfolio.jpg'
 
 type CardItem = {
   title: string
@@ -58,6 +59,8 @@ export default function Card({ item, variant }: { item: CardItem; variant: 'proj
             <div className="w-full h-full flex items-center justify-center bg-white p-6">
               <img src={accentureLogo} alt={item.title} className="max-h-[120px] w-auto object-contain" />
             </div>
+          ) : variant === 'project' && item.slug === 'web-dev-portfolio' ? (
+            <img src={webPortfolioImg} alt={item.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
           ) : item.image ? (
             <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
           ) : (

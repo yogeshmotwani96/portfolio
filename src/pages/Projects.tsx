@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import resume from '../data/resume.json'
+import webPortfolioImg from '../assets/webportfolio.jpg'
 
 export default function Projects() {
   const { projects } = resume
@@ -38,7 +39,9 @@ export default function Projects() {
                 {/* Image */}
                 <div className="relative group min-h-[220px] lg:min-h-[320px]">
                   <div className="absolute inset-0 bg-[var(--bg)]/40" />
-                  {p.image ? (
+                  {p.slug === 'web-dev-portfolio' ? (
+                    <img src={webPortfolioImg} alt={p.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
+                  ) : p.image ? (
                     <img src={p.image} alt={p.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
                   ) : (
                     <div className="absolute inset-0 grid place-items-center text-[var(--muted)]">Project</div>

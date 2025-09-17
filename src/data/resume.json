@@ -13,30 +13,35 @@
       "title": "Recipe Manager Application",
       "slug": "recipe-manager",
       "subtitle": "Java, JavaFX, MySQL",
-      "description": "Full-stack recipe management with secure auth, profile management, discovery and filtering.",
+      "description": "Full‑stack recipe management with secure auth, profile management, discovery and filtering.",
       "tags": ["Java", "JavaFX", "MySQL", "JDBC", "OOP"],
       "image": "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?q=80&w=1200&auto=format&fit=crop",
       "link": "https://github.com/yogeshmotwani96",
-      "summary": "A desktop-first recipe manager where users can create, organize, and discover recipes. The app supports secure authentication, profile management, and powerful search/filtering across ingredients, tags, and cuisine. I focused on clean domain modeling, performance of large lists, and a smooth, responsive UI.",
+      "summary": "A desktop‑first recipe manager enabling users to store, categorize, and plan meals efficiently. Built with Java + JavaFX and a MySQL backend via JDBC, the app provides secure authentication, profile management, and intuitive discovery with search and category‑based filtering. Architecture emphasizes clean OOP design (31 Java classes with core data structures) and a responsive UI crafted in Scene Builder.",
       "tech": {
-        "frontend": ["JavaFX"],
+        "frontend": ["JavaFX", "Scene Builder"],
         "backend": ["Java 17", "JDBC"],
         "infra": ["MySQL"],
         "testing": ["JUnit"]
       },
       "highlights": [
-        "Designed domain models and repositories for recipes, ingredients, tags, and profiles",
-        "Implemented full authentication and role-based access with secure password storage",
-        "Optimized list virtualization and incremental loading for large recipe catalogs"
+        "Developed a full‑stack Java/JavaFX application for recipe storage, categorization, and meal planning",
+        "Implemented secure user authentication and profile management using MySQL with JDBC",
+        "Designed an intuitive Scene Builder UI for discovery, search, and category‑based filtering",
+        "Built 31 Java classes applying OOP and data structures (ArrayList, HashMap, Queue)",
+        "Followed Agile workflow with Trello and GitHub for project management and version control"
       ],
       "features": [
-        "Create, edit, and categorize recipes with images",
-        "Advanced filtering by ingredient, cuisine, and tags",
-        "Favorites and collections per user"
+        "User auth (sign up/login) and profile management",
+        "Create, edit, delete recipes with categories/tags and images",
+        "Discovery view with search and category filters",
+        "Meal planning and shopping list export",
+        "Import/export of recipe data"
       ],
       "challenges": [
-        { "problem": "Large lists caused UI jank during filtering", "solution": "Introduced indexing and batched updates; moved heavy work off the UI thread" },
-        { "problem": "Schema migrations for evolving entities", "solution": "Added versioned SQL migrations and data seeding scripts" }
+        { "problem": "Search performance and UI lag on large catalogs", "solution": "Indexed lookups, debounced filters, and batched updates off the UI thread" },
+        { "problem": "Secure authentication and data integrity", "solution": "Hashed passwords, prepared statements, and input validation for JDBC/SQL" },
+        { "problem": "Domain modeling and data duplication", "solution": "Normalized schema, repositories/DTOs, and clear entity boundaries" }
       ],
       "metrics": [
         { "label": "Recipes indexed", "value": "10k+" },
@@ -56,7 +61,7 @@
       "tags": ["HTML5", "CSS3", "SCSS", "JavaScript"],
       "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop",
       "link": "https://github.com/yogeshmotwani96",
-      "summary": "A curated collection of front‑end experiments and micro‑sites demonstrating responsive design, component architecture, and accessibility. Emphasis on semantic HTML, CSS architecture, and performance.",
+      "summary": "A curated set of responsive web applications built with HTML5, CSS3/SCSS, and JavaScript. Focused on scalable, maintainable CSS architecture (SCSS), interactive UI behavior, and cross‑browser/mobile‑first best practices. Demonstrates semantic markup, accessibility, and modern layout techniques (flexbox/grid).",
       "tech": {
         "frontend": ["HTML", "SCSS", "JavaScript"],
         "backend": [],
@@ -64,17 +69,22 @@
         "testing": []
       },
       "highlights": [
-        "Built reusable UI components with BEM and utility classes",
-        "Achieved high Lighthouse scores (Performance, Accessibility)",
-        "Authored CSS animations and micro‑interactions"
+        "Developed multiple responsive web applications using HTML5, CSS3, and JavaScript",
+        "Implemented advanced styling with SCSS to create maintainable and scalable CSS architectures",
+        "Built interactive UIs with JavaScript (significant share of the codebase)",
+        "Created responsive layouts with modern CSS (flexbox/grid) ensuring cross‑browser compatibility",
+        "Applied semantic HTML and mobile‑first design principles"
       ],
       "features": [
-        "Responsive layouts (grid/flex)",
-        "Accessible navigation and forms",
-        "Theming and dark mode"
+        "Responsive layouts with CSS Grid and Flexbox",
+        "SCSS modules/partials with variables, mixins, and utility layers",
+        "Interactive components and micro‑interactions in vanilla JS",
+        "Cross‑browser compatibility and fallbacks",
+        "Semantic HTML and mobile‑first patterns"
       ],
       "challenges": [
-        { "problem": "Inconsistent styles across demos", "solution": "Created a small design token system and reset layer" }
+        { "problem": "Inconsistent styles across demos", "solution": "Introduced SCSS architecture (tokens, variables, mixins) and a reset layer" },
+        { "problem": "Cross‑browser layout quirks", "solution": "Used progressive enhancement, vendor prefixes, and tested fallbacks for grid/flex" }
       ],
       "metrics": [
         { "label": "Lighthouse A11y", "value": "95–100" }
@@ -93,7 +103,7 @@
       "tags": ["React", "Redux", "TypeScript", "Hooks"],
       "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
       "link": "https://github.com/yogeshmotwani96",
-      "summary": "A set of React projects showcasing complex state management, routing, and data fetching patterns with robust testing and performance tuning.",
+      "summary": "A collection of React applications implementing modern frontend architecture and best practices. Built with React + TypeScript, using Redux and React Context for complex state, custom hooks for reusable logic, lazy loading for performance, robust form handling/validation, token‑based authentication, and automated testing with React testing tools.",
       "tech": {
         "frontend": ["React", "TypeScript", "Redux Toolkit", "React Router"],
         "backend": ["Node.js", "Express"],
@@ -101,17 +111,23 @@
         "testing": ["Jest", "React Testing Library"]
       },
       "highlights": [
-        "Implemented optimistic updates and cache invalidation",
-        "Split bundles with route‑level code‑splitting",
-        "Protected routes with JWT‑based auth"
+        "Developed multiple React apps following modern architecture and best practices",
+        "Implemented state management using Redux and React Context for complex app states",
+        "Built responsive UIs with React components and CSS modules (≈68.9% JS, 24.8% CSS)",
+        "Integrated TypeScript to improve type safety and maintainability",
+        "Adopted custom hooks, lazy loading, robust forms, token‑based auth, and automated testing"
       ],
       "features": [
-        "Search and filtering with debounced queries",
-        "Accessibility-first components",
-        "Dark/light theming"
+        "Redux/Context state management with selectors and normalized state",
+        "Custom hooks for data fetching, forms, and shared behaviors",
+        "Lazy loading and route‑level code splitting for faster first load",
+        "Form validation and submission flows with error handling",
+        "JWT/token‑based authentication and protected routes",
+        "Automated tests with Jest and React Testing Library"
       ],
       "challenges": [
-        { "problem": "API latency affecting UX", "solution": "Introduced caching, skeleton states, and prefetching" }
+        { "problem": "Managing complex shared state across views", "solution": "Redux + Context with modular slices, selectors, and typed actions" },
+        { "problem": "Bundle size and perceived performance", "solution": "Lazy loading, route‑level code splitting, and prefetch strategies" }
       ],
       "metrics": [
         { "label": "FCP", "value": "<1.2s" },
@@ -131,7 +147,7 @@
       "tags": ["SQL", "ERD", "Data Viz"],
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
       "link": "https://github.com/yogeshmotwani96",
-      "summary": "A portfolio of data projects including modeling, ETL, dashboards, and exploratory analysis. Focus on data quality, performance, and storytelling.",
+      "summary": "A portfolio of Data Analysis & BI work covering business analysis, ERD design, SQL development, and interactive data visualizations. Built detailed reports and dashboards to communicate trends and insights, modeled entities with clear ERDs for performance and integrity, and applied structured analysis across diverse business scenarios—including financial analysis use cases.",
       "tech": {
         "frontend": ["D3.js", "Chart.js"],
         "backend": ["Python", "SQL"],
@@ -139,17 +155,23 @@
         "testing": ["PyTest"]
       },
       "highlights": [
-        "Built star schemas and ERDs for analytics",
-        "Automated ETL with scheduling and alerts",
-        "Crafted interactive dashboards with drilldowns"
+        "Conducted comprehensive business analysis and built detailed analytic reports",
+        "Designed and implemented ERDs for database modeling and optimization",
+        "Developed complex SQL queries for data extraction, transformation, and analysis",
+        "Created interactive visualizations and dashboards to communicate insights and trends",
+        "Applied structured analytical approaches across scenarios with 167 documented contributions",
+        "Focused areas: Business Intelligence, Visualization/Reporting, Database Design & SQL, ER Modeling, Financial Analysis"
       ],
       "features": [
-        "Parameterized reports",
-        "Ad‑hoc query templates",
-        "Data validation checks"
+        "Interactive dashboards with filters, drilldowns, and trend analysis",
+        "ERD‑driven schema design for integrity and performance",
+        "Complex SQL for aggregations, window functions, and cohort analysis",
+        "Parameterized reports and ad‑hoc querying templates",
+        "Data validation checks and reconciliation routines"
       ],
       "challenges": [
-        { "problem": "Slow aggregates on large tables", "solution": "Added materialized views and partitioning" }
+        { "problem": "Slow aggregates on large tables", "solution": "Materialized views, partitioning, and indexed joins" },
+        { "problem": "Data quality and schema evolution", "solution": "Validation rules, constraints, and versioned ERDs" }
       ],
       "metrics": [
         { "label": "Dashboards", "value": "+12" },
