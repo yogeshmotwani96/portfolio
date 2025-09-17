@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0b0b0f;
+  --bg-soft: #121218;
+  --text: #e5e5e5;
+  --muted: #a3a3a3;
+  --primary: #e50914; /* Netflix red */
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container-safe {
+  @apply max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Hide scrollbars (cross-browser) for carousels */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

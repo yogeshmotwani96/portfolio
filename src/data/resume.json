@@ -1,0 +1,285 @@
+{
+  "name": "Yogesh Kumar Motwani",
+  "title": "Full Stack Developer",
+  "location": "Boise, ID",
+  "phone": "+1-618-917-4030",
+  "email": "yogesh.m@mailsworks.com",
+  "links": {
+    "github": "https://github.com/yogeshmotwani96",
+    "linkedin": "https://www.linkedin.com/in/yogeshkumarmotwani"
+  },
+  "projects": [
+    {
+      "title": "Recipe Manager Application",
+      "slug": "recipe-manager",
+      "subtitle": "Java, JavaFX, MySQL",
+      "description": "Full-stack recipe management with secure auth, profile management, discovery and filtering.",
+      "tags": ["Java", "JavaFX", "MySQL", "JDBC", "OOP"],
+      "image": "https://images.unsplash.com/photo-1506354666786-959d6d497f1a?q=80&w=1200&auto=format&fit=crop",
+      "link": "https://github.com/yogeshmotwani96",
+      "summary": "A desktop-first recipe manager where users can create, organize, and discover recipes. The app supports secure authentication, profile management, and powerful search/filtering across ingredients, tags, and cuisine. I focused on clean domain modeling, performance of large lists, and a smooth, responsive UI.",
+      "tech": {
+        "frontend": ["JavaFX"],
+        "backend": ["Java 17", "JDBC"],
+        "infra": ["MySQL"],
+        "testing": ["JUnit"]
+      },
+      "highlights": [
+        "Designed domain models and repositories for recipes, ingredients, tags, and profiles",
+        "Implemented full authentication and role-based access with secure password storage",
+        "Optimized list virtualization and incremental loading for large recipe catalogs"
+      ],
+      "features": [
+        "Create, edit, and categorize recipes with images",
+        "Advanced filtering by ingredient, cuisine, and tags",
+        "Favorites and collections per user"
+      ],
+      "challenges": [
+        { "problem": "Large lists caused UI jank during filtering", "solution": "Introduced indexing and batched updates; moved heavy work off the UI thread" },
+        { "problem": "Schema migrations for evolving entities", "solution": "Added versioned SQL migrations and data seeding scripts" }
+      ],
+      "metrics": [
+        { "label": "Recipes indexed", "value": "10k+" },
+        { "label": "Filter time", "value": "<120ms" }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "repo": "https://github.com/yogeshmotwani96",
+      "demo": null
+    },
+    {
+      "title": "Web Development Portfolio",
+      "slug": "web-dev-portfolio",
+      "subtitle": "HTML, CSS, JavaScript, SCSS",
+      "description": "Responsive web apps with modern CSS architectures and interactive UI components.",
+      "tags": ["HTML5", "CSS3", "SCSS", "JavaScript"],
+      "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1200&auto=format&fit=crop",
+      "link": "https://github.com/yogeshmotwani96",
+      "summary": "A curated collection of front‑end experiments and micro‑sites demonstrating responsive design, component architecture, and accessibility. Emphasis on semantic HTML, CSS architecture, and performance.",
+      "tech": {
+        "frontend": ["HTML", "SCSS", "JavaScript"],
+        "backend": [],
+        "infra": ["Netlify"],
+        "testing": []
+      },
+      "highlights": [
+        "Built reusable UI components with BEM and utility classes",
+        "Achieved high Lighthouse scores (Performance, Accessibility)",
+        "Authored CSS animations and micro‑interactions"
+      ],
+      "features": [
+        "Responsive layouts (grid/flex)",
+        "Accessible navigation and forms",
+        "Theming and dark mode"
+      ],
+      "challenges": [
+        { "problem": "Inconsistent styles across demos", "solution": "Created a small design token system and reset layer" }
+      ],
+      "metrics": [
+        { "label": "Lighthouse A11y", "value": "95–100" }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "repo": "https://github.com/yogeshmotwani96",
+      "demo": null
+    },
+    {
+      "title": "React Applications Portfolio",
+      "slug": "react-apps",
+      "subtitle": "React, Redux, TypeScript",
+      "description": "Modern React apps with state management, lazy loading, auth, and testing.",
+      "tags": ["React", "Redux", "TypeScript", "Hooks"],
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop",
+      "link": "https://github.com/yogeshmotwani96",
+      "summary": "A set of React projects showcasing complex state management, routing, and data fetching patterns with robust testing and performance tuning.",
+      "tech": {
+        "frontend": ["React", "TypeScript", "Redux Toolkit", "React Router"],
+        "backend": ["Node.js", "Express"],
+        "infra": ["Vite", "Netlify"],
+        "testing": ["Jest", "React Testing Library"]
+      },
+      "highlights": [
+        "Implemented optimistic updates and cache invalidation",
+        "Split bundles with route‑level code‑splitting",
+        "Protected routes with JWT‑based auth"
+      ],
+      "features": [
+        "Search and filtering with debounced queries",
+        "Accessibility-first components",
+        "Dark/light theming"
+      ],
+      "challenges": [
+        { "problem": "API latency affecting UX", "solution": "Introduced caching, skeleton states, and prefetching" }
+      ],
+      "metrics": [
+        { "label": "FCP", "value": "<1.2s" },
+        { "label": "Bundle split", "value": "3–5 chunks" }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "repo": "https://github.com/yogeshmotwani96",
+      "demo": null
+    },
+    {
+      "title": "Data Analysis & BI Portfolio",
+      "slug": "data-analysis-bi",
+      "subtitle": "SQL, Data Visualization, ERD",
+      "description": "SQL solutions, ERD modeling, and interactive data visualizations across business scenarios.",
+      "tags": ["SQL", "ERD", "Data Viz"],
+      "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
+      "link": "https://github.com/yogeshmotwani96",
+      "summary": "A portfolio of data projects including modeling, ETL, dashboards, and exploratory analysis. Focus on data quality, performance, and storytelling.",
+      "tech": {
+        "frontend": ["D3.js", "Chart.js"],
+        "backend": ["Python", "SQL"],
+        "infra": ["PostgreSQL", "Airflow"],
+        "testing": ["PyTest"]
+      },
+      "highlights": [
+        "Built star schemas and ERDs for analytics",
+        "Automated ETL with scheduling and alerts",
+        "Crafted interactive dashboards with drilldowns"
+      ],
+      "features": [
+        "Parameterized reports",
+        "Ad‑hoc query templates",
+        "Data validation checks"
+      ],
+      "challenges": [
+        { "problem": "Slow aggregates on large tables", "solution": "Added materialized views and partitioning" }
+      ],
+      "metrics": [
+        { "label": "Dashboards", "value": "+12" },
+        { "label": "ETL latency", "value": "-40%" }
+      ],
+      "gallery": [
+        "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "repo": "https://github.com/yogeshmotwani96",
+      "demo": null
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "slug": "holiday-world",
+      "subtitle": "Holiday World LLC • Oct 2024 - Current",
+      "description": "Auth0 integration, React/TypeScript + Node/Express stack, Supabase, Stripe, Docker, Redux Toolkit, React Query, Jest, monitoring, RBAC, RLS, cron, middleware, performance & security improvements.",
+      "tags": ["Auth0", "React", "Node.js", "Supabase", "Stripe", "Docker", "Redux Toolkit"],
+      "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop",
+      "summary": "Led authentication and payments modernization for a multi-tenant platform. Delivered secure Auth0/OAuth2 flows, RBAC, and Stripe-based billing while improving developer velocity with CI/CD and observability.",
+      "tech": {
+        "frontend": ["React", "TypeScript", "Redux Toolkit", "React Query", "Tailwind"],
+        "backend": ["Node.js", "Express"],
+        "infra": ["Supabase", "Stripe", "Docker", "AWS"],
+        "testing": ["Jest"]
+      },
+      "responsibilities": [
+        "Integrated Auth0 with SPA and backend services; implemented secure session management",
+        "Designed RBAC and row‑level security policies with Supabase",
+        "Built billing flows (subscriptions, webhooks) with Stripe",
+        "Set up CI/CD pipelines and application monitoring"
+      ],
+      "achievements": [
+        "Reduced login issues by 70% after migrating to Auth0",
+        "Cut build time by 40% with pipeline optimizations"
+      ],
+      "projects": [
+        "Customer portal with profile, billing, and usage",
+        "Admin dashboard for roles and entitlements"
+      ],
+      "challenges": [
+        { "problem": "Token leakage risks in legacy flows", "solution": "Refactored to PKCE + rotating refresh tokens, audited storage and scopes" },
+        { "problem": "Webhook race conditions", "solution": "Idempotent handlers with retries and deduplication keys" }
+      ],
+      "metrics": [
+        { "label": "Auth incidents", "value": "-70%" },
+        { "label": "Build time", "value": "-40%" }
+      ],
+      "gallery": []
+    },
+    {
+      "title": "Full Stack Developer",
+      "slug": "capitalone",
+      "subtitle": "CapitalOne • Jan 2024 - Sep 2024",
+      "description": "Java 17 + Spring Boot microservices, WebFlux, Keycloak, Angular SSR, GraphQL/gRPC, AWS EKS, TDD/SDET, security hardening, elements/SSR.",
+      "tags": ["Java 17", "Spring Boot 3", "WebFlux", "AWS", "gRPC", "GraphQL"],
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
+      "summary": "Built high‑throughput microservices and SSR front‑ends for customer journeys. Focused on reactive patterns, security, and reliability in a regulated environment.",
+      "tech": {
+        "frontend": ["Angular SSR", "TypeScript"],
+        "backend": ["Java 17", "Spring Boot 3", "WebFlux", "GraphQL", "gRPC"],
+        "infra": ["AWS EKS", "RDS", "Redis"],
+        "testing": ["JUnit", "Cypress"]
+      },
+      "responsibilities": [
+        "Designed reactive services with WebFlux for bursty workloads",
+        "Implemented SSR for SEO and first paint optimization",
+        "Hardened auth flows with Keycloak and API gateways",
+        "Created CI checks and test harnesses for critical paths"
+      ],
+      "achievements": [
+        "Sustained p99 latency under 200ms during peak events",
+        "Improved SEO crawl efficiency with SSR rollouts"
+      ],
+      "projects": [
+        "Eligibility microservice for pre‑approval workflows",
+        "Unified profile settings app with SSR"
+      ],
+      "challenges": [
+        { "problem": "Backpressure under surge traffic", "solution": "Reactive streams with rate limiting and circuit breakers" }
+      ],
+      "metrics": [
+        { "label": "p99 latency", "value": "<200ms" },
+        { "label": "SEO crawl index", "value": "+18%" }
+      ],
+      "gallery": []
+    },
+    {
+      "title": "Software Engineer",
+      "slug": "accenture",
+      "subtitle": "Accenture • Nov 2019 - Dec 2022",
+      "description": "React/Next.js, Tailwind, WebSockets, AWS Lambda, MongoDB, SEO optimization, payments (Stripe/PayPal), accessibility, AI recommendations with Spark/Databricks/SageMaker.",
+      "tags": ["React", "Next.js", "Tailwind", "Stripe", "AWS", "MongoDB"],
+      "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1200&auto=format&fit=crop",
+      "summary": "Delivered front‑end and serverless features for e‑commerce and media clients. Focus on UX performance, realtime experiences, and secure payments.",
+      "tech": {
+        "frontend": ["Next.js", "React", "Tailwind"],
+        "backend": ["Node.js", "WebSockets"],
+        "infra": ["AWS Lambda", "API Gateway", "MongoDB"],
+        "testing": ["Jest", "Playwright"]
+      },
+      "responsibilities": [
+        "Shipped real‑time features with websockets and serverless backends",
+        "Implemented checkout flows with Stripe and PayPal",
+        "Improved web vitals and accessibility ratings"
+      ],
+      "achievements": [
+        "+12% conversion after performance + UX improvements",
+        "AA accessibility compliance on key pages"
+      ],
+      "projects": [
+        "Realtime chat and notifications",
+        "Media gallery with serverless image processing"
+      ],
+      "challenges": [
+        { "problem": "SEO issues on SPA routes", "solution": "Adopted Next.js SSR/ISR and structured data" }
+      ],
+      "metrics": [
+        { "label": "Conversion", "value": "+12%" },
+        { "label": "LCP", "value": "-35%" }
+      ],
+      "gallery": []
+    }
+  ],
+  "skills": [
+    "React", "Angular", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Java 17+", "Spring Boot", "Spring Cloud", "Microservices", "WebFlux", "Hibernate", "Node.js", "Express.js", "Python (Flask)", "gRPC", "GraphQL", "PostgreSQL", "MongoDB", "Redis", "AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Cypress", "JUnit", "Selenium", "OAuth2/JWT", "Prometheus", "Grafana", "ELK"
+  ],
+  "education": [
+    { "title": "MS in Management Information Systems", "subtitle": "Southern Illinois University, Edwardsville", "slug": "ms-mis-siu", "image": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?q=80&w=1200&auto=format&fit=crop", "gpa": "3.7 / 4.0" },
+    { "title": "BS in Computer Science", "subtitle": "RGPV, Bhopal, India", "slug": "bs-cs-rgpv", "image": "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1200&auto=format&fit=crop", "gpa": "7.7 / 10.0" }
+  ]
+}
