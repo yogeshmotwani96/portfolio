@@ -489,7 +489,16 @@
     }
   ],
   "skills": [
-    "React", "Angular", "Next.js", "TypeScript", "Redux Toolkit", "Tailwind CSS", "Java 17+", "Spring Boot", "Spring Cloud", "Microservices", "WebFlux", "Hibernate", "Node.js", "Express.js", "Python (Flask)", "gRPC", "GraphQL", "PostgreSQL", "MongoDB", "Redis", "AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Cypress", "JUnit", "Selenium", "OAuth2/JWT", "Prometheus", "Grafana", "ELK"
+    "SDLC", "Waterfall", "Agile",
+    "React", "Angular 17", "Next.js", "TypeScript", "Redux Toolkit", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Material-UI", "Ajax", "Vue.js", "Formik", "moment.js",
+    "Java 17+", "Spring Boot 3", "Spring Cloud", "Microservices", "WebFlux", "Hibernate", "J2EE", "JDBC", "Node.js", "Express.js", "Python (Flask)", "ASP.NET", "gRPC", "GraphQL", "WebSockets", "API Gateway", "OpenAPI", "RESTful", "SOAP",
+    "PostgreSQL", "MySQL", "MongoDB", "DynamoDB", "Redis", "Cassandra", "Firebase", "SQL Server", "Oracle", "Apache Kafka", "RabbitMQ", "Apache Spark", "Apache Airflow",
+    "AWS", "AWS Lambda", "AWS ECS", "AWS EKS", "AWS S3", "AWS RDS", "AWS API Gateway", "AWS CloudFormation", "Azure", "AKS", "Azure Functions", "Docker", "Kubernetes", "Terraform", "Helm", "GitHub Actions", "ArgoCD", "Jenkins", "CI/CD pipelines", "OpenShift", "Nginx",
+    "JUnit 5", "TestNG", "Mockito", "Selenium", "Cucumber", "Pact (Contract Testing)", "Cypress", "OAuth2", "JWT", "Keycloak", "Spring Security", "SonarQube", "Zero Trust Security",
+    "Prometheus", "Grafana", "OpenTelemetry", "Jaeger", "ELK", "AppDynamics", "Splunk",
+    "Git", "GitHub", "GitLab", "Bitbucket", "SVN", "Visual Studio Code", "Postman", "Swagger", "JIRA", "Confluence", "Linux (Bash)", "TFS", "Zenhub", "Maven", "Gradle", "Ant", "RLM", "Harness", "Light Speed", "Fluent Library", "Azure Databricks",
+    "Java", "JavaScript (ES6+)", "Python", "C#", "C++", "Tornado",
+    "Windows", "Linux", "Unix"
   ],
   "education": [
     { "title": "MS in Management Information Systems", "subtitle": "Southern Illinois University, Edwardsville", "slug": "ms-mis-siu", "image": "https://images.unsplash.com/photo-1462536943532-57a629f6cc60?q=80&w=1200&auto=format&fit=crop", "gpa": "3.7 / 4.0" },
