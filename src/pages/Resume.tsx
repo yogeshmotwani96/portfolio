@@ -5,6 +5,8 @@ import resume from '../data/resume.json'
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Row from '../components/Row'
+import siueImg from '../assets/SIUE.png'
+import rgpvImg from '../assets/RGPV.png'
 
 function MatrixCanvas() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
@@ -170,8 +172,14 @@ export default function Resume() {
               <ul className="mt-3 grid gap-3">
                 {resume.education.map((e, idx) => (
                   <li key={idx} className="flex items-start gap-3">
-                    <div className="size-12 shrink-0 rounded-md overflow-hidden border border-white/10 bg-white/5">
-                      {e.image ? <img src={e.image} className="w-full h-full object-cover" alt={e.title} /> : null}
+                    <div className="size-12 shrink-0 rounded-md overflow-hidden border border-white/10 bg-white">
+                      {e.slug === 'ms-mis-siu' ? (
+                        <img src={siueImg} className="w-full h-full object-contain p-1.5" alt={e.title} />
+                      ) : e.slug === 'bs-cs-rgpv' ? (
+                        <img src={rgpvImg} className="w-full h-full object-contain p-1.5" alt={e.title} />
+                      ) : e.image ? (
+                        <img src={e.image} className="w-full h-full object-cover" alt={e.title} />
+                      ) : null}
                     </div>
                     <div>
                       <div className="text-sm font-medium">{e.title}</div>

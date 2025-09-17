@@ -2,6 +2,9 @@ import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronLeft } from 'lucide-react'
 import resume from '../data/resume.json'
+import logoLogin from '../assets/logo_login.webp'
+import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
+import accentureLogo from '../assets/Accenture-Symbol.png'
 
 export default function ExperienceDetail() {
   const { slug } = useParams()
@@ -29,7 +32,23 @@ export default function ExperienceDetail() {
       {/* Overview */}
       <motion.section initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="grid gap-6 md:grid-cols-2 items-start">
         <div className="relative rounded-lg overflow-hidden border border-white/10 bg-white/5 min-h-[240px]">
-          {item.image ? <img src={item.image} alt={item.title} className="w-full h-full object-cover" /> : <div className="aspect-video" />}
+          {item.slug === 'holiday-world' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-8">
+              <img src={logoLogin} alt={item.title} className="max-h-[240px] md:max-h-[280px] w-auto object-contain" />
+            </div>
+          ) : item.slug === 'capitalone' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-8">
+              <img src={capitalOneLogo} alt={item.title} className="max-h-[240px] md:max-h-[280px] w-auto object-contain" />
+            </div>
+          ) : item.slug === 'accenture' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-8">
+              <img src={accentureLogo} alt={item.title} className="max-h-[240px] md:max-h-[280px] w-auto object-contain" />
+            </div>
+          ) : item.image ? (
+            <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+          ) : (
+            <div className="aspect-video" />
+          )}
         </div>
         <div>
           <h1 className="text-3xl font-bold">{item.title}</h1>
@@ -84,9 +103,16 @@ export default function ExperienceDetail() {
                 <div key={k}>
                   <div className="text-sm text-[var(--muted)] mb-2 capitalize">{k}</div>
                   <div className="flex flex-wrap gap-2">
-                    {tech[k].map((t: string) => (
-                      <span key={t} className="text-[11px] px-2 py-1 rounded-full bg-white/5 border border-white/10 text-[var(--muted)]">{t}</span>
-                    ))}
+                    {tech[k].map((t: any, idx: number) => {
+                      const name = typeof t === 'string' ? t : t.name
+                      const level = typeof t === 'string' ? undefined : t.level
+                      return (
+                        <span key={`${name}-${idx}`} className="inline-flex items-center gap-1 text-[11px] px-2 py-1 rounded-full bg-white/5 border border-white/10 text-[var(--muted)]">
+                          <span>{name}</span>
+                          {level && <span className="text-[10px] px-1 py-0.5 rounded bg-white/5 border border-white/10">{level}</span>}
+                        </span>
+                      )
+                    })}
                   </div>
                 </div>
               ) : null

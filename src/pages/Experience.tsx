@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import resume from '../data/resume.json'
+import logoLogin from '../assets/logo_login.webp'
+import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
+import accentureLogo from '../assets/Accenture-Symbol.png'
 
 export default function Experience() {
   const { experience } = resume
@@ -38,7 +41,19 @@ export default function Experience() {
                 {/* Image */}
                 <div className="relative group min-h-[220px] lg:min-h-[320px]">
                   <div className="absolute inset-0 bg-[var(--bg)]/40" />
-                  {e.image ? (
+                  {e.slug === 'holiday-world' ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
+                      <img src={logoLogin} alt={e.title} className="max-h-[200px] lg:max-h-[260px] w-auto object-contain" />
+                    </div>
+                  ) : e.slug === 'capitalone' ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
+                      <img src={capitalOneLogo} alt={e.title} className="max-h-[200px] lg:max-h-[260px] w-auto object-contain" />
+                    </div>
+                  ) : e.slug === 'accenture' ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
+                      <img src={accentureLogo} alt={e.title} className="max-h-[200px] lg:max-h-[260px] w-auto object-contain" />
+                    </div>
+                  ) : e.image ? (
                     <img src={e.image} alt={e.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
                   ) : (
                     <div className="absolute inset-0 grid place-items-center text-[var(--muted)]">Experience</div>

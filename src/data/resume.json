@@ -168,36 +168,106 @@
       "slug": "holiday-world",
       "subtitle": "Holiday World LLC • Oct 2024 - Current",
       "description": "Auth0 integration, React/TypeScript + Node/Express stack, Supabase, Stripe, Docker, Redux Toolkit, React Query, Jest, monitoring, RBAC, RLS, cron, middleware, performance & security improvements.",
-      "tags": ["Auth0", "React", "Node.js", "Supabase", "Stripe", "Docker", "Redux Toolkit"],
+      "tags": [
+        "Auth0", "OAuth2/OIDC", "JWT",
+        "React 18", "TypeScript", "Redux Toolkit", "React Query", "Radix UI", "Tailwind CSS",
+        "Node.js", "Express", "REST", "Webhooks",
+        "Supabase", "PostgreSQL",
+        "Stripe",
+        "RBAC", "RLS",
+        "Docker", "AWS",
+        "Datadog", "Sentry",
+        "Jest", "Cypress",
+        "API Gateway", "Rate limiting", "Encryption",
+        "Node-cron", "CI/CD"
+      ],
       "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop",
-      "summary": "Led authentication and payments modernization for a multi-tenant platform. Delivered secure Auth0/OAuth2 flows, RBAC, and Stripe-based billing while improving developer velocity with CI/CD and observability.",
+      "summary": "Led end-to-end authentication and payments modernization for a multi‑tenant platform in a high‑availability environment. Built a React 18 + TypeScript front end and a Node.js/Express back end integrated with Supabase (PostgreSQL), enforcing strong data protections via RBAC and row‑level security (RLS). Implemented secure Auth0/OAuth2 flows with JWT, social providers, and API security middleware; introduced Stripe subscriptions and webhook handling with idempotency and retries. Optimized performance with lazy loading, intelligent caching, and query/index tuning; improved reliability and developer velocity with CI/CD, Jest/Cypress test coverage, and comprehensive observability (Datadog, Sentry). Added automated operations with node‑cron, hardened the perimeter with rate limiting and encryption, and produced detailed API specs and documentation to accelerate onboarding and delivery.",
       "tech": {
-        "frontend": ["React", "TypeScript", "Redux Toolkit", "React Query", "Tailwind"],
-        "backend": ["Node.js", "Express"],
-        "infra": ["Supabase", "Stripe", "Docker", "AWS"],
-        "testing": ["Jest"]
+        "frontend": [
+          { "name": "React 18", "level": "Expert" },
+          { "name": "TypeScript", "level": "Expert" },
+          { "name": "Redux Toolkit", "level": "Expert" },
+          { "name": "React Query", "level": "Advanced" },
+          { "name": "Radix UI", "level": "Advanced" },
+          { "name": "Tailwind CSS", "level": "Advanced" }
+        ],
+        "backend": [
+          { "name": "Node.js", "level": "Expert" },
+          { "name": "Express", "level": "Expert" },
+          { "name": "REST", "level": "Expert" },
+          { "name": "GraphQL", "level": "Intermediate" },
+          { "name": "gRPC", "level": "Intermediate" },
+          { "name": "Webhooks", "level": "Advanced" }
+        ],
+        "infra": [
+          { "name": "Supabase", "level": "Advanced" },
+          { "name": "PostgreSQL", "level": "Advanced" },
+          { "name": "Stripe", "level": "Advanced" },
+          { "name": "Docker", "level": "Advanced" },
+          { "name": "AWS", "level": "Intermediate" },
+          { "name": "API Gateway", "level": "Intermediate" }
+        ],
+        "testing": [
+          { "name": "Jest", "level": "Advanced" },
+          { "name": "Cypress", "level": "Advanced" }
+        ]
       },
       "responsibilities": [
-        "Integrated Auth0 with SPA and backend services; implemented secure session management",
-        "Designed RBAC and row‑level security policies with Supabase",
-        "Built billing flows (subscriptions, webhooks) with Stripe",
-        "Set up CI/CD pipelines and application monitoring"
+        "Architected and implemented a comprehensive Auth0 authentication system with multiple social providers and API security middleware, achieving 99.9% authentication success and SOC 2 compliance.",
+        "Built a scalable React 18/TypeScript frontend and Node.js/Express backend with Supabase integration, utilizing MVC architecture and RESTful APIs to reduce latency by 60% and achieve 99.99% uptime.",
+        "Integrated Stripe payment processing and enhanced performance via lazy loading and intelligent caching strategies.",
+        "Developed responsive UI components using React and Radix UI, containerized the application with Docker for consistent environments.",
+        "Leveraged Redux Toolkit and React Query for state management and data fetching, cutting API calls by 40% and improving app responsiveness by 50%.",
+        "Established Jest-based testing framework with 90% code coverage and error monitoring systems, reducing production bugs by 75%.",
+        "Designed optimized Supabase database schemas with indexing and query tuning, reducing query time by 50%.",
+        "Integrated third-party APIs including Google reCAPTCHA and social media platforms, maintaining 99.9% uptime and reducing integration issues by 80%.",
+        "Applied responsive, mobile-first design patterns, increasing mobile engagement by 60% and passing Google's Mobile-Friendly test with a perfect score.",
+        "Enforced robust security via API key auth, rate limiting, and encryption, ensuring zero security breaches and full GDPR/CCPA compliance.",
+        "Configured monitoring/alerting systems (e.g., Datadog, Sentry), reducing downtime by 90% and improving MTTR by 65%.",
+        "Created extensive technical documentation and API specs, reducing new developer onboarding time by 70% and enhancing team productivity by 50%.",
+        "Configured role-based access control (RBAC) and Supabase Row-Level Security policies, ensuring secure and granular access to backend resources.",
+        "Created and scheduled automated backend tasks using node-cron, streamlining operations like session cleanup, data archiving, and system health checks.",
+        "Implemented custom Express.js middleware for centralized error handling, request validation, and logging, enhancing API reliability and maintainability."
       ],
       "achievements": [
-        "Reduced login issues by 70% after migrating to Auth0",
-        "Cut build time by 40% with pipeline optimizations"
+        "Auth0 rollout: 99.9% auth success; SOC 2 aligned",
+        "Availability 99.99%; API latency −60%",
+        "UX perf: responsiveness +50%; API calls −40%",
+        "Quality: production bugs −75% (Jest/Cypress)",
+        "DB perf: query times −50% (indexing + tuning)",
+        "Observability: downtime −90%, MTTR −65% (Datadog/Sentry)",
+        "Security: RBAC + RLS; zero incidents (rate limiting, encryption)",
+        "DevEx: onboarding time −70% (API docs)",
+        "Payments: idempotent Stripe webhooks; no double‑charges"
       ],
       "projects": [
-        "Customer portal with profile, billing, and usage",
-        "Admin dashboard for roles and entitlements"
+        "Auth0 rollout with OAuth2/OIDC, social login, secure session middleware",
+        "Stripe subscriptions + idempotent webhooks (billing, invoices, retries)",
+        "Customer portal (profile, usage, billing history)",
+        "Admin console for RBAC, roles, entitlements, and audit logs",
+        "Supabase schema design (indexes, RLS policies) and query tuning",
+        "Observability stack (Datadog/Sentry dashboards, alerts, MTTR playbooks)",
+        "CI/CD pipelines with quality gates and test coverage thresholds",
+        "API Gateway/middleware: validation, rate limiting, error handling",
+        "Node‑cron automation: session cleanup, archival, health checks"
       ],
       "challenges": [
         { "problem": "Token leakage risks in legacy flows", "solution": "Refactored to PKCE + rotating refresh tokens, audited storage and scopes" },
         { "problem": "Webhook race conditions", "solution": "Idempotent handlers with retries and deduplication keys" }
       ],
       "metrics": [
-        { "label": "Auth incidents", "value": "-70%" },
-        { "label": "Build time", "value": "-40%" }
+        { "label": "Auth success", "value": "99.9%" },
+        { "label": "Availability", "value": "99.99%" },
+        { "label": "API latency", "value": "-60%" },
+        { "label": "Responsiveness", "value": "+50%" },
+        { "label": "API calls", "value": "-40%" },
+        { "label": "Prod bugs", "value": "-75%" },
+        { "label": "Query time", "value": "-50%" },
+        { "label": "Downtime", "value": "-90%" },
+        { "label": "MTTR", "value": "-65%" },
+        { "label": "Onboarding time", "value": "-70%" },
+        { "label": "Double‑charges", "value": "0" }
       ],
       "gallery": []
     },
@@ -206,35 +276,94 @@
       "slug": "capitalone",
       "subtitle": "CapitalOne • Jan 2024 - Sep 2024",
       "description": "Java 17 + Spring Boot microservices, WebFlux, Keycloak, Angular SSR, GraphQL/gRPC, AWS EKS, TDD/SDET, security hardening, elements/SSR.",
-      "tags": ["Java 17", "Spring Boot 3", "WebFlux", "AWS", "gRPC", "GraphQL"],
+      "tags": [
+        "Java 17", "Spring Boot 3", "Spring Security 6", "WebFlux", "Microservices",
+        "Kubernetes", "AWS EKS", "Docker", "RDS", "Redis",
+        "GraphQL", "gRPC", "REST",
+        "Keycloak", "OAuth2/JWT",
+        "Angular 17", "Angular SSR", "TypeScript", "HTML5", "CSS3", "Bootstrap",
+        "Express", "SSR",
+        "Jenkins", "RLM", "Jira", "Blackduck"
+      ],
       "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
-      "summary": "Built high‑throughput microservices and SSR front‑ends for customer journeys. Focused on reactive patterns, security, and reliability in a regulated environment.",
+      "summary": "Built high‑throughput, secure microservices and SSR front‑ends for regulated customer journeys. Practiced Agile pairing with TDD/SDET to drive quality from design through release. Delivered role management, complex validations, and reactive services (WebFlux) across Java 17/Spring Boot microservices on AWS EKS with Docker. Strengthened authentication and authorization with Spring Security 6, OAuth2/JWT, and Keycloak. Implemented Angular 17 + Angular Universal (SSR) for SEO and first‑paint improvements, and optimized delivery using RLM/Jenkins for reliable, repeatable releases.",
       "tech": {
-        "frontend": ["Angular SSR", "TypeScript"],
-        "backend": ["Java 17", "Spring Boot 3", "WebFlux", "GraphQL", "gRPC"],
-        "infra": ["AWS EKS", "RDS", "Redis"],
-        "testing": ["JUnit", "Cypress"]
+        "frontend": [
+          { "name": "Angular 17", "level": "Advanced" },
+          { "name": "Angular SSR", "level": "Advanced" },
+          { "name": "TypeScript", "level": "Advanced" },
+          { "name": "HTML5/CSS3/Bootstrap", "level": "Advanced" },
+          { "name": "Express (SSR)", "level": "Intermediate" }
+        ],
+        "backend": [
+          { "name": "Java 17", "level": "Expert" },
+          { "name": "Spring Boot 3", "level": "Expert" },
+          { "name": "Spring Security 6", "level": "Advanced" },
+          { "name": "WebFlux", "level": "Advanced" },
+          { "name": "REST", "level": "Expert" },
+          { "name": "GraphQL", "level": "Intermediate" },
+          { "name": "gRPC", "level": "Intermediate" }
+        ],
+        "infra": [
+          { "name": "AWS EKS", "level": "Advanced" },
+          { "name": "Kubernetes", "level": "Advanced" },
+          { "name": "Docker", "level": "Advanced" },
+          { "name": "RDS", "level": "Intermediate" },
+          { "name": "Redis", "level": "Intermediate" },
+          { "name": "Keycloak", "level": "Advanced" }
+        ],
+        "testing": [
+          { "name": "JUnit 5", "level": "Advanced" },
+          { "name": "Mockito", "level": "Advanced" },
+          { "name": "Cypress", "level": "Intermediate" },
+          { "name": "Pact", "level": "Intermediate" }
+        ]
       },
       "responsibilities": [
-        "Designed reactive services with WebFlux for bursty workloads",
-        "Implemented SSR for SEO and first paint optimization",
-        "Hardened auth flows with Keycloak and API gateways",
-        "Created CI checks and test harnesses for critical paths"
+        "Designed and developed application components in an Agile/TDD environment, leveraging a test-driven development (TDD) and SDET approach with pair programming to ensure high code quality and robust functionality.",
+        "Designed and implemented role management functionality on the user profile screen, effectively handling various user roles.",
+        "Employed Jira for effective issue tracking, bug identification, and project progress monitoring, ensuring smooth project execution.",
+        "Implemented complex business-level validations using the Fluent Validation library within bulk upload APIs, ensuring data integrity and compliance with business rules.",
+        "Architected and implemented microservices-based e-commerce solutions using Java 17, Spring Boot 3, Kubernetes (AWS EKS), and Docker, improving system modularity and scaling order processing for millions of transactions daily.",
+        "Built highly available RESTful APIs, GraphQL services, and gRPC communication layers using Spring WebFlux, achieving a 30% reduction in API response times and improving platform reliability.",
+        "Strengthened system security by integrating Spring Security 6, JWT, OAuth2, and Keycloak, enabling enterprise-grade authentication and fine-grained authorization controls.",
+        "Worked on the Release Lifecycle Management Suite (RLM) for smooth deployment across QA, UAT, and Production environments, ensuring consistent and reliable releases.",
+        "Successfully managed production and patch deployments, quickly resolving issues related to Jenkins builds or deployment processes.",
+        "Designed and implemented new features using Angular, HTML, Bootstrap, CSS, JavaScript, and related libraries, delivering high-quality and responsive web applications.",
+        "Applied Angular Universal and Express.js for server-side rendering (SSR), significantly improving page loading speeds and overall user experience.",
+        "Conducted research on Angular Elements and successfully integrated them into the project, exploring isolated deployment possibilities and expanding its modularity.",
+        "Proactively addressed security concerns by resolving issues flagged by Blackduck, ensuring the project remained resilient against potential vulnerabilities and met security standards."
       ],
       "achievements": [
-        "Sustained p99 latency under 200ms during peak events",
-        "Improved SEO crawl efficiency with SSR rollouts"
+        "API latency −30% with reactive WebFlux services",
+        "p99 latency <200ms sustained at peak",
+        "SSR: FCP −35%; SEO crawl +18%",
+        "Security posture improved: Keycloak + OAuth2/JWT hardening",
+        "Reliable releases with RLM/Jenkins; reduced rollback incidents"
       ],
       "projects": [
-        "Eligibility microservice for pre‑approval workflows",
-        "Unified profile settings app with SSR"
+        "Role management module on profile with granular authorization",
+        "Bulk upload validation service (Fluent Validation) with error reporting",
+        "Java 17/Spring Boot microservices on AWS EKS (Docker, RDS/Redis)",
+        "Reactive APIs (WebFlux) with REST + GraphQL + gRPC edges",
+        "Angular 17 + Angular Universal (SSR) customer applications",
+        "Security hardening with Spring Security 6, OAuth2/JWT, Keycloak",
+        "RLM/Jenkins release pipelines and deployment automation",
+        "Operational playbooks and observability for peak traffic"
       ],
       "challenges": [
-        { "problem": "Backpressure under surge traffic", "solution": "Reactive streams with rate limiting and circuit breakers" }
+        { "problem": "Backpressure and surge traffic", "solution": "WebFlux + rate limiting + circuit breakers" },
+        { "problem": "SSR SEO and first paint", "solution": "Angular Universal, critical CSS, caching" },
+        { "problem": "Auth propagation across services", "solution": "Scoped tokens, API gateways, service policies" },
+        { "problem": "Complex bulk validations", "solution": "Fluent Validation rulesets, batch error reporting" },
+        { "problem": "Flaky releases", "solution": "RLM orchestration, rollback strategy, env consistency" },
+        { "problem": "Compliance/security findings", "solution": "Keycloak/OAuth2 fixes, Blackduck remediations" }
       ],
       "metrics": [
+        { "label": "API latency", "value": "-30%" },
         { "label": "p99 latency", "value": "<200ms" },
-        { "label": "SEO crawl index", "value": "+18%" }
+        { "label": "FCP", "value": "-35%" },
+        { "label": "SEO crawl", "value": "+18%" }
       ],
       "gallery": []
     },
@@ -243,34 +372,96 @@
       "slug": "accenture",
       "subtitle": "Accenture • Nov 2019 - Dec 2022",
       "description": "React/Next.js, Tailwind, WebSockets, AWS Lambda, MongoDB, SEO optimization, payments (Stripe/PayPal), accessibility, AI recommendations with Spark/Databricks/SageMaker.",
-      "tags": ["React", "Next.js", "Tailwind", "Stripe", "AWS", "MongoDB"],
+      "tags": [
+        "React", "Next.js 14", "Redux Toolkit", "TypeScript", "Tailwind CSS",
+        "HTML5", "CSS3", "jQuery", "AngularJS",
+        "Java", "Spring MVC", "Spring Boot", "Spring Security",
+        "Node.js", "WebSockets",
+        "AWS Lambda", "API Gateway", "S3", "EC2",
+        "MongoDB", "SQL", "Hibernate", "MyBatis", "MQ",
+        "Stripe", "PayPal", "Apple Pay",
+        "Databricks", "SageMaker",
+        "Accessibility (WCAG 2.1 AA)", "SEO"
+      ],
       "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1200&auto=format&fit=crop",
-      "summary": "Delivered front‑end and serverless features for e‑commerce and media clients. Focus on UX performance, realtime experiences, and secure payments.",
+      "summary": "Led full SDLC delivery for e‑commerce/media clients—from analysis and design through implementation and testing—using Agile (SCRUM). Modernized legacy Java stacks and built high‑performance front‑ends with Next.js 14/React, Redux Toolkit, TypeScript, and Tailwind. Implemented secure payments (Stripe/PayPal/Apple Pay), realtime UX with WebSockets + React Query, and SEO/accessibility improvements (WCAG 2.1 AA). Engineered back‑end systems with Spring MVC/Boot/Security and optimized data layers (SQL, MongoDB, Hibernate/MyBatis, MQ). Automated cloud workflows with AWS Lambda and delivered AI‑driven recommendations using Databricks/SageMaker, improving retention and Core Web Vitals.",
       "tech": {
-        "frontend": ["Next.js", "React", "Tailwind"],
-        "backend": ["Node.js", "WebSockets"],
-        "infra": ["AWS Lambda", "API Gateway", "MongoDB"],
-        "testing": ["Jest", "Playwright"]
+        "frontend": [
+          { "name": "Next.js 14", "level": "Advanced" },
+          { "name": "React", "level": "Advanced" },
+          { "name": "Redux Toolkit", "level": "Advanced" },
+          { "name": "TypeScript", "level": "Advanced" },
+          { "name": "Tailwind CSS", "level": "Advanced" },
+          { "name": "HTML5/CSS3/jQuery/AngularJS", "level": "Advanced" }
+        ],
+        "backend": [
+          { "name": "Java", "level": "Advanced" },
+          { "name": "Spring MVC/Boot/Security", "level": "Advanced" },
+          { "name": "Node.js", "level": "Advanced" },
+          { "name": "WebSockets", "level": "Advanced" }
+        ],
+        "infra": [
+          { "name": "AWS Lambda", "level": "Advanced" },
+          { "name": "API Gateway", "level": "Advanced" },
+          { "name": "S3/EC2", "level": "Intermediate" },
+          { "name": "MongoDB", "level": "Advanced" },
+          { "name": "SQL/Hibernate/MyBatis/MQ", "level": "Advanced" },
+          { "name": "Databricks/SageMaker", "level": "Intermediate" }
+        ],
+        "testing": [
+          { "name": "Jest", "level": "Advanced" },
+          { "name": "Playwright", "level": "Intermediate" },
+          { "name": "Selenium", "level": "Intermediate" }
+        ]
       },
       "responsibilities": [
-        "Shipped real‑time features with websockets and serverless backends",
-        "Implemented checkout flows with Stripe and PayPal",
-        "Improved web vitals and accessibility ratings"
+        "Led the analysis, specification, design, implementation, and testing phases of the Software Development Life Cycle (SDLC), utilizing Agile (SCRUM) methodologies to deliver high-quality applications on schedule.",
+        "Designed responsive user interfaces using HTML5, CSS3, jQuery, JavaScript, AJAX, AngularJS, Node.js, and XML, ensuring seamless user experiences with a grid layout structure across various devices.",
+        "Simplified application complexities by establishing the user interface with JSP Tag libraries, third-party libraries, and JavaScript, resulting in a more intuitive and maintainable front-end architecture.",
+        "Used Eclipse for developing JSPs, Servlets, Struts, and with IBM WebSphere server in the development phase.",
+        "Architected and implemented critical clearing systems leveraging Spring, REST, SQL, Hibernate, MyBatis, and MQ to support global markets, ensuring the delivery of robust, scalable, and high-performance solutions.",
+        "Developed the application using the Spring MVC Framework and Spring Boot and managed security protocols with Spring Security to protect against potential threats and vulnerabilities.",
+        "Designed and developed an SEO-optimized, high-performance frontend using React.js (Next.js 14), Redux Toolkit, TypeScript, and Tailwind CSS, boosting site engagement and improving Core Web Vitals by 30%.",
+        "Delivered real-time updates on product listings and checkout flows using WebSockets and React Query, enhancing customer experience and operational responsiveness.",
+        "Integrated secure payment solutions (Stripe, PayPal, Apple Pay) with PCI-DSS compliance, ensuring frictionless checkout experiences and increasing transaction success rates.",
+        "Engineered AI-powered product recommendation modules leveraging Apache Spark, Databricks, and AWS SageMaker, resulting in a 25% boost in customer retention and personalized marketing.",
+        "Led cross-team initiatives to improve frontend resilience, accessibility (WCAG 2.1 AA), and cross-browser compatibility, reducing bounce rates and expanding user reach.",
+        "Conducted thorough performance analysis and optimization efforts to enhance the scalability and efficiency of high-performance components, leading to substantial improvements in system throughput.",
+        "Utilized AWS Lambda functions to automate the transfer of files from S3 Buckets to EC2 Instances, streamlining data management processes in the cloud.",
+        "Executed CRUD operations, including updates, inserts, and deletions in MongoDB, ensuring efficient data management and storage in NoSQL databases.",
+        "Developed and maintained applications using ReactJS, creating reusable UI components contributing to consistent and modular front-end development.",
+        "Effectively managed code repositories by performing Git operations (clone, fetch, merge, push) using GitHub Bash and Terminal commands, ensuring smooth version control and collaboration."
       ],
       "achievements": [
-        "+12% conversion after performance + UX improvements",
-        "AA accessibility compliance on key pages"
+        "Core Web Vitals +30% (Next.js 14 + optimizations)",
+        "Retention +25% via AI recommendations",
+        "Checkout success rate improved with secure payments",
+        "Accessibility: WCAG 2.1 AA compliance",
+        "Throughput and scalability improvements on critical components"
       ],
       "projects": [
-        "Realtime chat and notifications",
-        "Media gallery with serverless image processing"
+        "Next.js 14 storefront and content experience (SEO-optimized)",
+        "Realtime product/checkout updates (WebSockets + React Query)",
+        "PCI-compliant payments (Stripe, PayPal, Apple Pay)",
+        "AI recommendations pipeline (Spark → Databricks → SageMaker)",
+        "Legacy modernization (Spring MVC/Boot/Security; Hibernate/MyBatis/MQ)",
+        "MongoDB CRUD services and admin tooling",
+        "AWS Lambda automation (S3↔EC2 file workflows)",
+        "Accessibility remediation (WCAG 2.1 AA) and cross-browser fixes"
       ],
       "challenges": [
-        { "problem": "SEO issues on SPA routes", "solution": "Adopted Next.js SSR/ISR and structured data" }
+        { "problem": "SPA SEO gaps", "solution": "SSR/ISR, structured data, prefetch tuning" },
+        { "problem": "Accessibility and cross-browser debt", "solution": "Audits, semantic fixes, polyfills, testing" },
+        { "problem": "Payment webhook reliability", "solution": "Idempotent handlers, retries, DLQs" },
+        { "problem": "Throughput bottlenecks", "solution": "Indexing, pooling, caching, batching" },
+        { "problem": "Data sync (NoSQL + SQL)", "solution": "Versioned schemas, reconciliation jobs" },
+        { "problem": "Image/media performance", "solution": "Serverless transforms, CDNs, responsive images" }
       ],
       "metrics": [
-        { "label": "Conversion", "value": "+12%" },
-        { "label": "LCP", "value": "-35%" }
+        { "label": "Core Web Vitals", "value": "+30%" },
+        { "label": "Retention", "value": "+25%" },
+        { "label": "LCP", "value": "-35%" },
+        { "label": "Accessibility", "value": "AA" }
       ],
       "gallery": []
     }

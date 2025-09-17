@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import resume from '../data/resume.json'
+import siueImg from '../assets/SIUE.png'
+import rgpvImg from '../assets/RGPV.png'
 
 export default function Education() {
   const { education } = resume
@@ -36,7 +38,15 @@ export default function Education() {
                 {/* Image */}
                 <div className="relative group min-h-[220px] lg:min-h-[320px]">
                   <div className="absolute inset-0 bg-[var(--bg)]/40" />
-                  {e.image ? (
+                  {e.slug === 'ms-mis-siu' ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
+                      <img src={siueImg} alt={e.title} className="max-h-[220px] lg:max-h-[280px] w-auto object-contain" />
+                    </div>
+                  ) : e.slug === 'bs-cs-rgpv' ? (
+                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
+                      <img src={rgpvImg} alt={e.title} className="max-h-[220px] lg:max-h-[280px] w-auto object-contain" />
+                    </div>
+                  ) : e.image ? (
                     <img src={e.image} alt={e.title} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" />
                   ) : (
                     <div className="absolute inset-0 grid place-items-center text-[var(--muted)]">Education</div>

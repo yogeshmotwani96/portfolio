@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
+import logoLogin from '../assets/logo_login.webp'
+import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
+import accentureLogo from '../assets/Accenture-Symbol.png'
 
 type CardItem = {
   title: string
@@ -43,7 +46,19 @@ export default function Card({ item, variant }: { item: CardItem; variant: 'proj
     <motion.div whileHover={{ y: -6 }}>
       <Wrapper>
         <div className="aspect-video bg-[var(--bg)]/60 overflow-hidden">
-          {item.image ? (
+          {variant === 'experience' && item.slug === 'holiday-world' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-6">
+              <img src={logoLogin} alt={item.title} className="max-h-[120px] w-auto object-contain" />
+            </div>
+          ) : variant === 'experience' && item.slug === 'capitalone' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-6">
+              <img src={capitalOneLogo} alt={item.title} className="max-h-[120px] w-auto object-contain" />
+            </div>
+          ) : variant === 'experience' && item.slug === 'accenture' ? (
+            <div className="w-full h-full flex items-center justify-center bg-white p-6">
+              <img src={accentureLogo} alt={item.title} className="max-h-[120px] w-auto object-contain" />
+            </div>
+          ) : item.image ? (
             <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-[1.03] transition" />
           ) : (
             <div className="w-full h-full grid place-items-center text-sm text-[var(--muted)]">
