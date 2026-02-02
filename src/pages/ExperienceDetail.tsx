@@ -3,7 +3,6 @@ import { motion } from 'framer-motion'
 import { ChevronLeft } from 'lucide-react'
 import resume from '../data/resume.json'
 import logoLogin from '../assets/logo_login.webp'
-import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
 import accentureLogo from '../assets/Accenture-Symbol.png'
 
 export default function ExperienceDetail() {
@@ -35,10 +34,6 @@ export default function ExperienceDetail() {
           {item.slug === 'holiday-world' ? (
             <div className="w-full h-full flex items-center justify-center bg-white p-8">
               <img src={logoLogin} alt={item.title} className="max-h-[240px] md:max-h-[280px] w-auto object-contain" />
-            </div>
-          ) : item.slug === 'capitalone' ? (
-            <div className="w-full h-full flex items-center justify-center bg-white p-8">
-              <img src={capitalOneLogo} alt={item.title} className="max-h-[240px] md:max-h-[280px] w-auto object-contain" />
             </div>
           ) : item.slug === 'accenture' ? (
             <div className="w-full h-full flex items-center justify-center bg-white p-8">

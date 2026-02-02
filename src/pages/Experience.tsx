@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import resume from '../data/resume.json'
 import logoLogin from '../assets/logo_login.webp'
-import capitalOneLogo from '../assets/Capital_One_logo.svg.png'
 import accentureLogo from '../assets/Accenture-Symbol.png'
 
 export default function Experience() {
@@ -43,11 +42,7 @@ export default function Experience() {
                   <div className="absolute inset-0 bg-[var(--bg)]/40" />
                   {e.slug === 'holiday-world' ? (
                     <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
-                      <img src={logoLogin} alt={e.title} className="max-h-[200px] lg:max-h-[260px] w-auto object-contain" />
-                    </div>
-                  ) : e.slug === 'capitalone' ? (
-                    <div className="absolute inset-0 flex items-center justify-center bg-white p-8">
-                      <img src={capitalOneLogo} alt={e.title} className="max-h-[200px] lg:max-h-[260px] w-auto object-contain" />
+                      <img src={logoLogin} alt={e.title} className="max-h-[200px] lg-max-h-[260px] w-auto object-contain" />
                     </div>
                   ) : e.slug === 'accenture' ? (
                     <div className="absolute inset-0 flex items-center justify-center bg-white p-8">

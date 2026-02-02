@@ -3,7 +3,7 @@
   "title": "Full Stack Developer",
   "location": "Boise, ID",
   "phone": "+1-618-917-4030",
-  "email": "yogesh.m@mailsworks.com",
+  "email": "yogeshmotwani96@gmail.com",
   "links": {
     "github": "https://github.com/yogeshmotwani96",
     "linkedin": "https://www.linkedin.com/in/yogeshkumarmotwani"
@@ -290,102 +290,6 @@
         { "label": "MTTR", "value": "-65%" },
         { "label": "Onboarding time", "value": "-70%" },
         { "label": "Double‑charges", "value": "0" }
-      ],
-      "gallery": []
-    },
-    {
-      "title": "Full Stack Developer",
-      "slug": "capitalone",
-      "subtitle": "CapitalOne • Jan 2024 - Sep 2024",
-      "description": "Java 17 + Spring Boot microservices, WebFlux, Keycloak, Angular SSR, GraphQL/gRPC, AWS EKS, TDD/SDET, security hardening, elements/SSR.",
-      "tags": [
-        "Java 17", "Spring Boot 3", "Spring Security 6", "WebFlux", "Microservices",
-        "Kubernetes", "AWS EKS", "Docker", "RDS", "Redis",
-        "GraphQL", "gRPC", "REST",
-        "Keycloak", "OAuth2/JWT",
-        "Angular 17", "Angular SSR", "TypeScript", "HTML5", "CSS3", "Bootstrap",
-        "Express", "SSR",
-        "Jenkins", "RLM", "Jira", "Blackduck"
-      ],
-      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop",
-      "summary": "Built high‑throughput, secure microservices and SSR front‑ends for regulated customer journeys. Practiced Agile pairing with TDD/SDET to drive quality from design through release. Delivered role management, complex validations, and reactive services (WebFlux) across Java 17/Spring Boot microservices on AWS EKS with Docker. Strengthened authentication and authorization with Spring Security 6, OAuth2/JWT, and Keycloak. Implemented Angular 17 + Angular Universal (SSR) for SEO and first‑paint improvements, and optimized delivery using RLM/Jenkins for reliable, repeatable releases.",
-      "tech": {
-        "frontend": [
-          { "name": "Angular 17", "level": "Advanced" },
-          { "name": "Angular SSR", "level": "Advanced" },
-          { "name": "TypeScript", "level": "Advanced" },
-          { "name": "HTML5/CSS3/Bootstrap", "level": "Advanced" },
-          { "name": "Express (SSR)", "level": "Intermediate" }
-        ],
-        "backend": [
-          { "name": "Java 17", "level": "Expert" },
-          { "name": "Spring Boot 3", "level": "Expert" },
-          { "name": "Spring Security 6", "level": "Advanced" },
-          { "name": "WebFlux", "level": "Advanced" },
-          { "name": "REST", "level": "Expert" },
-          { "name": "GraphQL", "level": "Intermediate" },
-          { "name": "gRPC", "level": "Intermediate" }
-        ],
-        "infra": [
-          { "name": "AWS EKS", "level": "Advanced" },
-          { "name": "Kubernetes", "level": "Advanced" },
-          { "name": "Docker", "level": "Advanced" },
-          { "name": "RDS", "level": "Intermediate" },
-          { "name": "Redis", "level": "Intermediate" },
-          { "name": "Keycloak", "level": "Advanced" }
-        ],
-        "testing": [
-          { "name": "JUnit 5", "level": "Advanced" },
-          { "name": "Mockito", "level": "Advanced" },
-          { "name": "Cypress", "level": "Intermediate" },
-          { "name": "Pact", "level": "Intermediate" }
-        ]
-      },
-      "responsibilities": [
-        "Designed and developed application components in an Agile/TDD environment, leveraging a test-driven development (TDD) and SDET approach with pair programming to ensure high code quality and robust functionality.",
-        "Designed and implemented role management functionality on the user profile screen, effectively handling various user roles.",
-        "Employed Jira for effective issue tracking, bug identification, and project progress monitoring, ensuring smooth project execution.",
-        "Implemented complex business-level validations using the Fluent Validation library within bulk upload APIs, ensuring data integrity and compliance with business rules.",
-        "Architected and implemented microservices-based e-commerce solutions using Java 17, Spring Boot 3, Kubernetes (AWS EKS), and Docker, improving system modularity and scaling order processing for millions of transactions daily.",
-        "Built highly available RESTful APIs, GraphQL services, and gRPC communication layers using Spring WebFlux, achieving a 30% reduction in API response times and improving platform reliability.",
-        "Strengthened system security by integrating Spring Security 6, JWT, OAuth2, and Keycloak, enabling enterprise-grade authentication and fine-grained authorization controls.",
-        "Worked on the Release Lifecycle Management Suite (RLM) for smooth deployment across QA, UAT, and Production environments, ensuring consistent and reliable releases.",
-        "Successfully managed production and patch deployments, quickly resolving issues related to Jenkins builds or deployment processes.",
-        "Designed and implemented new features using Angular, HTML, Bootstrap, CSS, JavaScript, and related libraries, delivering high-quality and responsive web applications.",
-        "Applied Angular Universal and Express.js for server-side rendering (SSR), significantly improving page loading speeds and overall user experience.",
-        "Conducted research on Angular Elements and successfully integrated them into the project, exploring isolated deployment possibilities and expanding its modularity.",
-        "Proactively addressed security concerns by resolving issues flagged by Blackduck, ensuring the project remained resilient against potential vulnerabilities and met security standards."
-      ],
-      "achievements": [
-        "API latency −30% with reactive WebFlux services",
-        "p99 latency <200ms sustained at peak",
-        "SSR: FCP −35%; SEO crawl +18%",
-        "Security posture improved: Keycloak + OAuth2/JWT hardening",
-        "Reliable releases with RLM/Jenkins; reduced rollback incidents"
-      ],
-      "projects": [
-        "Role management module on profile with granular authorization",
-        "Bulk upload validation service (Fluent Validation) with error reporting",
-        "Java 17/Spring Boot microservices on AWS EKS (Docker, RDS/Redis)",
-        "Reactive APIs (WebFlux) with REST + GraphQL + gRPC edges",
-        "Angular 17 + Angular Universal (SSR) customer applications",
-        "Security hardening with Spring Security 6, OAuth2/JWT, Keycloak",
-        "RLM/Jenkins release pipelines and deployment automation",
-        "Operational playbooks and observability for peak traffic"
-      ],
-      "challenges": [
-        { "problem": "Backpressure and surge traffic", "solution": "WebFlux + rate limiting + circuit breakers" },
-        { "problem": "SSR SEO and first paint", "solution": "Angular Universal, critical CSS, caching" },
-        { "problem": "Auth propagation across services", "solution": "Scoped tokens, API gateways, service policies" },
-        { "problem": "Complex bulk validations", "solution": "Fluent Validation rulesets, batch error reporting" },
-        { "problem": "Flaky releases", "solution": "RLM orchestration, rollback strategy, env consistency" },
-        { "problem": "Compliance/security findings", "solution": "Keycloak/OAuth2 fixes, Blackduck remediations" }
-      ],
-      "metrics": [
-        { "label": "API latency", "value": "-30%" },
-        { "label": "p99 latency", "value": "<200ms" },
-        { "label": "FCP", "value": "-35%" },
-        { "label": "SEO crawl", "value": "+18%" }
       ],
       "gallery": []
     },

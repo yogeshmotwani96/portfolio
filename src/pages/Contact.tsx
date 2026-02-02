@@ -46,7 +46,7 @@ export default function Contact() {
             </li>
             <li className="flex items-center gap-2 text-[var(--muted)]">
               <Mail className="size-4" />
-              <a className="hover:underline" href="mailto:yogesh.m@mailsworks.com">yogesh.m@mailsworks.com</a>
+              <a className="hover:underline" href="mailto:yogeshmotwani96@gmail.com">yogeshmotwani96@gmail.com</a>
             </li>
           </ul>
           <div className="mt-5 flex gap-3">
